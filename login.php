@@ -59,7 +59,7 @@
 			<p><label>Username :</label><input name="usern" type="text" placeholder="username"></p>
 			<p><label>password :</label><input name="userp" type="password" placeholder="password"></p>
 			<p><input  type="submit" value="login" class="btnb"></p>
-			<?php echo $error; ?>
+			<?php if (isset($error)) echo $error; ?>
 			</form>
 		</div></div>
 	</body>

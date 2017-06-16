@@ -6,7 +6,7 @@ header("Location: index.html");
 exit();
 }
 include 'asset/class/modelslist.php';
-if ($_SESSION["LoggedIn"]==true) {
+if (isset($_SESSION["LoggedIn"])) {
 		$page=$_REQUEST['page'];
 		include 'master.php';
 		exit;	
